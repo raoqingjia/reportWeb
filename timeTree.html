@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>big events</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<style>
+		.absolute{
+			position: absolute;
+			left: 5%;
+			top: 5%;
+			color: #999898;
+			font-size: 20px;
+			text-align: left;
+		}
+		.box{
+			width: 90px;
+			height: 17px;
+			border: 4px green solid;
+		}
+		.titleOne{
+			margin-top: 15px;
+			background: transparent!important;
+		}
+		.titleTwo{
+			margin-top: 5px;
+			background: transparent!important;
+			color: #999898;
+		}
+		.click{
+			text-align: center;
+			padding: 10px;
+			border: 2px #999898 solid;
+			border-radius: 10px;
+			position: absolute;
+			right: 5%;
+			bottom: -80%;
+			color: #999898;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+<div class="absolute animated swing infinite ">
+	<div class="box"></div>
+	<div class="titleOne" >Hewlett packard</div>
+	<div class="titleTwo" >Enterprise</div>
+</div>
+	<div class="contrainer header">
+		<!--<div class="w1000 ">-->
+			<!--<ul class='clearfix '>-->
+				<!--<li class='float_three'><a href="javascript:;">首页</a></li>-->
+				<!--<li class='float_three'><a href="javascript:;">设计</a></li>-->
+				<!--<li class='float_three'><a href="javascript:;">案例</a></li>-->
+			<!--</ul>-->
+		<!--</div>-->
+		<div class=" tc body">
+			<!--<p>我们通过互联网数据分析技术，结合优质生产供应链，实现服务标准化，降低服务成本，给客户更高“性价比”的产品服务。</p>-->
+			<!--<p>我们致力于给企业提供多样化快速高效的定制技术让企业周边产品户“更快捷”的定制服务。</p>-->
+			<!--<p>我们致力于给企业提供多样化快速高效的定制服务，希望通过互联网技术让标准化，降低服务成本，给客户更。</p>-->
+			<h1  class="titleStyle animated flip">
+				本季度工作概述
+			</h1>
+			<div class="line animated slideInRight" style=" animate-duration: 2s; "></div>
+			<div class=" w1000 event_wrap clearfix">
+				<div class="middle_line">					
+				</div>			
+			</div>
+
+		</div>
+
+
+	</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.eventFlow.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var bigEvent =[{
+		'year' : 2017,
+		'events' :[
+			{
+				'mouths' : 4,
+				'times' :'2017年5月',
+				'even' :'前端开发进行angular项目的更新，替换以往旧项目，后台提供接口准备。'
+			},{
+				'mouths' : 7,
+				'times' :'2017年6月',
+				'even' :'前后端开始把更新过后的项目进行前后端联调'
+			},{
+				'mouths' : 10,
+				'times' :'2017年7月',
+				'even' :'结算单新需求前后端用新angular编写，最后测试人员测试新项目有无问题'
+			}]
+	},
+			{
+		'year' : 2018,
+		'events' :[
+
+		]}
+		];
+		$('.event_wrap').eventFlow({'events':bigEvent});
+		setTimeout(function(){
+			$("body").append('<a class="click" href="future.html">&gt;</a>')
+		},3000);
+
+	})
+
+</script>
+
+</body>
+</html>

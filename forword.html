@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Clouds</title>
+		<meta charset="utf-8">
+		<link href="css/animate.min.css" rel="stylesheet">
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				position: relative;
+				z-index: 10;
+				height: 100%;
+				transition: all 1s;
+			}
+			h2{
+				text-align: center;
+				padding: 120px 0 10px 0;
+				font-size: 70px;
+			}
+			.line{
+				width: 147px;
+				height: 3px;
+				margin: 0 auto;
+				background-color: #000000;
+			}
+			p{
+				width: 800px;
+				margin: 0 auto;
+				margin-top: 90px;
+				text-indent:70px;
+				font-size: 25px;
+				line-height: 60px;
+				font-weight: 600;
+			}
+
+			.absolute{
+				position: absolute;
+				left: 5%;
+				top: 5%;
+				color: #999898;
+				font-size: 20px;
+				text-align: left;
+			}
+			.box{
+				width: 90px;
+				height: 17px;
+				border: 4px green solid;
+			}
+			.titleOne{
+				margin-top: 15px;
+				background: transparent!important;
+			}
+			.titleTwo{
+				margin-top: 5px;
+				background: transparent!important;
+				color: #999898;
+			}
+			.click{
+				text-align: center;
+				padding: 10px;
+				border: 2px #999898 solid;
+				border-radius: 10px;
+				position: absolute;
+				right: 5%;
+				bottom: 5%;
+				color: #999898;
+				text-decoration: none;
+			}
+
+		</style>
+	</head>
+	<body>
+	     <div class="absolute animated swing infinite ">
+			 <div class="box"></div>
+			 <div class="titleOne" >Hewlett packard</div>
+			 <div class="titleTwo" >Enterprise</div>
+		 </div>
+	      <h2 class="animated bounceInDown">前言</h2>
+	      <div class="line animated fadeInRightBig"></div>
+	      <p  class="animated flip">
+			  首先简单介绍一下我们跨省集团业务服务平台，跨省集团业务服务平台是以微服务架构为基础，快速便捷的为客户提供业务数据运营统计、数据使用量预警和详单下载的综合性平台。
+			  客户可以从ESOP或两级页面中进入该平台进行查询与统计。
+		  </p>
+		 <a class="click animated rotateInDownRight" href="introduce.html">&gt;</a>
+	</body>
+</html>
